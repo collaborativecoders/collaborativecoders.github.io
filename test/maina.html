@@ -1,0 +1,191 @@
+<html><head><style id="static">
+    /* Reset browser defaults *//* --------------------------------------------------------------
+    Reset default browser CSS.
+    Based on work by Eric Meyer:
+    * http://meyerweb.com/eric/tools/css/reset/index.html
+    -------------------------------------------------------------- *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+    body {line-height: 1; background: #FFF; text-align: left;}
+    ol, ul {list-style: none;}
+    blockquote, q {quotes: none;}
+    blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+    /* remember to define focus styles! */:focus {outline: 0;}
+    /* remember to highlight inserts somehow! */ins {text-decoration: none;}
+    del {text-decoration: line-through;}
+    /* tables still need 'cellspacing="0"' in the markup */table {border-collapse: collapse; border-spacing: 0;}
+    a img {border: none;}
+    /* Typography */
+
+    /*START old disc style for LI
+    ul, li {list-style-type: disc; margin: 0 0 0 12px; padding: 0;}
+    ul li {margin: 0 0 0 18px; padding: 0 0 0 3px;}
+    END old disc style for LI*/
+
+    /*START Image treatment for LI*/
+    /*ul {list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpiYCAAtIB4OxDfAOIoZIm9QPwfiv8AMT8TVOIvLqMMgPgqEL8F4ky8lgIEGAC+Fgk0YKVkbwAAAABJRU5ErkJggg==");}*/
+    ul, li {list-style:inherit;margin: 0 0 0 13px; padding: 0;}
+    ul li {margin: 0 0 0 16px; padding: 0 0 0 3px;}
+	#resumeDoc ul, #resumeDoc li {list-style-type: disc;}
+    /*END Image treatment for LI*/
+
+    .clear {clear: both; height: 0;}
+    br.clear {line-height: 0;}
+    div.name {font-size: 15px; line-height: 17px; font-weight: bold; padding: 0; text-align: left; text-transform: uppercase; color: #099;}
+    div.name span.fName {font-weight: normal;}
+    div.logo {display: none;}
+    div.paragraph {position: relative; clear: both;}
+    div.heading {clear: both; font-weight: bold; text-transform: uppercase;}
+    div.address {position: relative; text-align: left; font-size: 0.917em; line-height: 1.25em; margin-top: 0; padding-top: 1px;}
+    div.address2 {position: relative; text-align: left; font-size: 0.917em; line-height: 1.25em;}
+    span.paddedline {display: block;}
+    span.jobtitle, span.companyname, span.degree, span.dates_wrapper {font-weight: bold;}
+    span.dates_wrapper {display: block; float: left; text-align: left;}
+    span.cdesc {font-style: italic;}
+    div#document {color: #333;}
+    div#document table {width: 100%;}
+    .table_wrapper {width: 100%; margin-top: 0;}
+    table.twocol td {width: 50%;}
+    table.skills {width: 100%;}
+    table.skills th, table.skills td {width: 20%; text-align: center;}
+    table.skills th {text-decoration: underline;}
+    table.skills .skillname, table.skills .skillrating {text-align: left; width: 35%;}
+    table.skills .skillrating {width: 20%;}
+    table.skills .skillyears, table.skills .skilllast {width: 19%;}
+    table.skills .pad1 {width: 5%;}
+    table.skills .pad2, table.skills .pad3 {width: 1%;}
+    .nodisplay {display: none;}
+    div.resumeTitle, div.execRsmTitle {font-weight: bold; text-align: left; color: #099;}
+    td.twocol_2 {border-left:1px  solid #FEFDFD;}
+    div#document div.sectiontitle {color: #099;}
+
+    /*FIX for FORCEFULLY making left margin ZERO for CL*/
+    div#document .sectionCL .paragraph {margin-top: 0!important;}
+  </style>
+<style type="text/css" id="dynamic" time="Tue Mar 06 2018 09:35:00 GMT+0530 (India Standard Time)" leftcolwidth="0">
+    div#document {line-height: 15px;}
+    div#document table {line-height: 15px;}
+    div#document.pagesize {width: 532px;}
+    div#document.vmargins {padding-top: 24px; padding-bottom: 24px;}
+    div#document.hmargins {padding-left: 40px; padding-right: 40px;}
+    div#document .section {margin-top: 12px;}
+    div#document div.firstsection {margin-top: 0;}
+    div#document div.SECTION_CNTC {margin-top: 0;}
+    div#document div.heading {margin-bottom: 4px;}
+    div#document div.paragraph {margin-top: 8px;}
+    div#document div.firstparagraph {margin-top: 0;}
+    div#document .singlecolumn, div#document .maincolumn {margin-left: 115px;}
+    span.dates_wrapper {width: 115px; font-size:10px; line-height:16px;}
+    .fontsize {font-size: 10px;}
+    .fontface {font-family: Century Gothic;}
+    div#document div.sectiontitle {font-size: 12px; line-height: 17px;}
+    div.name {font-size: 35px; line-height: 45px;}
+    div#document .thinbottomborder {border-bottom: 0px solid #000;}
+    div.address {font-size: 9px; line-height: 19px; margin-top: {$CIMT}px;}
+    div#document table.skills td {padding-top: 4px;}
+    div.resumeTitle {font-size: 12px; line-height: 22px;}
+    div#document div.noPind {margin-left: 0;}
+    div.execRsmTitle {font-size: 11px; line-height: 16px;}
+    span.compDescWrap {margin-bottom: 4px;}
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%; font-size: 10px;}
+    div.address2 {font-size: 10px; line-height: 15px;}
+  </style>
+</head><body>
+<div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize" style="display: block;"><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_NAME1076ae2a-ebeb-441f-966f-2b42b468544c" class="section firstSection" style="padding-top:0px;">
+      
+    <div id="PARAGRAPH_1076ae2a-ebeb-441f-966f-2b42b468544c_1" class="paragraph PARAGRAPH_NAME firstparagraph">
+        <div class="name thinbottomborder">
+          <span class="field fName" id="1076ae2a-ebeb-441f-966f-2b42b468544cFNAM1">First Name</span><span dependency="FNAM+LNAM"></span> <span class="field" id="1076ae2a-ebeb-441f-966f-2b42b468544cLNAM1">Last Name</span>
+        </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_CNTC31681045-5d71-422a-8741-6cb66292092f" class="section SECTION_CNTC firstSection" style="padding-top:0px;">
+      
+    <div id="PARAGRAPH_31681045-5d71-422a-8741-6cb66292092f_1" class="paragraph PARAGRAPH_CNTC firstparagraph">
+        <div class="address">
+          <span class="field" id="31681045-5d71-422a-8741-6cb66292092fSTRT1"></span>
+          <span class="spaced field" id="31681045-5d71-422a-8741-6cb66292092fCITY1"></span>
+          <span class="spaced field" id="31681045-5d71-422a-8741-6cb66292092fSTAT1"></span>
+          <span class="spaced field" id="31681045-5d71-422a-8741-6cb66292092fZIPC1"></span>          
+          <span dependency="HPHN" style="display:none">H: </span><span class="field" id="31681045-5d71-422a-8741-6cb66292092fHPHN1"></span>          
+          <span dependency="CPHN" style="display:none">C: </span><span class="field" id="31681045-5d71-422a-8741-6cb66292092fCPHN1"></span>          
+          <span class="field" id="31681045-5d71-422a-8741-6cb66292092fEMAI1">asd@qweq.qwoeqp</span>
+        </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_SUMMda7c8923-7d3e-4197-b265-52342c5451f3" class="section" style="padding-top:0px;">
+      <div class="heading">
+        <div class="sectiontitle" id="SECTNAME_SUMMda7c8923-7d3e-4197-b265-52342c5451f3">Summary</div>
+      </div>
+      
+    <div class="paragraph firstparagraph" id="PARAGRAPH_da7c8923-7d3e-4197-b265-52342c5451f3_1">
+        <div class="field singlecolumn noPind" id="da7c8923-7d3e-4197-b265-52342c5451f3FRFM1"><font color="#40B0DE">Enter a brief description of your professional background. You can choose to highlight specific skills, knowledge, or industry experience.<br><u>See Examples</u></font> </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_HILTcf321444-cea2-4bd2-bd92-ea32dff2a243" class="section" style="padding-top:0px;">
+      <div class="heading">
+        <div class="sectiontitle" id="SECTNAME_HILTcf321444-cea2-4bd2-bd92-ea32dff2a243">Skills</div>
+      </div>
+      
+    <div class="paragraph firstparagraph" id="PARAGRAPH_cf321444-cea2-4bd2-bd92-ea32dff2a243_1">
+        <div class="singlecolumn maincolumn">
+          <table class="twocol">
+            <tbody><tr>
+              <td class="field twocol_1" id="cf321444-cea2-4bd2-bd92-ea32dff2a243SKC11"><font color="#40B0DE">Enter 3-4 skills in column 1.<br><u>See Examples</u></font></td>
+              <td class="field twocol_2" id="cf321444-cea2-4bd2-bd92-ea32dff2a243SKC21"><font color="#40B0DE">Enter 3-4 skills in column 2.</font></td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_EXPRc1cc55b5-954f-407d-b12f-fceffe113426" class="section" style="padding-top:0px;">
+      <div class="heading">
+        <div class="sectiontitle" id="SECTNAME_EXPRc1cc55b5-954f-407d-b12f-fceffe113426">Experience</div>
+      </div>
+      
+    <div class="paragraph firstparagraph" id="PARAGRAPH_c1cc55b5-954f-407d-b12f-fceffe113426_1">
+        <span class="dates_wrapper" dependency="JSTD|EDDT">
+          <span class="jobdates" id="FIELD_JSTD" format="%m/%Y"></span>
+          <span dependency="JSTD+EDDT" style="display:none"> to </span>
+          <span class="jobdates" id="FIELD_EDDT" format="%m/%Y"></span>
+        </span>
+        <div class="singlecolumn">
+          <span class="paddedline" dependency="JTIT">
+            <span class="jobtitle" id="FIELD_JTIT"></span>
+          </span>
+          <span class="paddedline" dependency="COMP|JSTA|JCIT">
+            <span class="companyname" id="FIELD_COMP"></span><span dependency="COMP+JCIT|JSTA" style="display:none"> - </span>
+            <span class="joblocation jobcity" id="FIELD_JCIT"></span><span dependency="JCIT+JSTA" style="display:none">, </span>
+            <span class="joblocation jobstate" id="FIELD_JSTA"></span>
+          </span>
+          <span class="paddedline">
+            <span class="jobline" id="c1cc55b5-954f-407d-b12f-fceffe113426JDES1"><font color="#40B0DE">Enter details about what you did in your previous jobs. Start with your responsibilities, but also include results and achievements.<br><u>See Examples</u></font></span>
+          </span>
+        </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_EDUC685d0288-d6f7-4d1a-a6e6-4ec425f90005" class="section" style="padding-top:0px;">
+      <div class="heading">
+        <div class="sectiontitle" id="SECTNAME_EDUC685d0288-d6f7-4d1a-a6e6-4ec425f90005">Education and Training</div>
+      </div>
+      
+    <div class="paragraph firstparagraph" id="PARAGRAPH_685d0288-d6f7-4d1a-a6e6-4ec425f90005_1">
+        <span class="dates_wrapper">
+          <span class="jobdates" id="FIELD_GRYR"></span>
+        </span>
+        <div class="singlecolumn">
+          <span class="paddedline" dependency="GRYR|STUY|DGRE">
+            <span class="degree" id="FIELD_DGRE"></span><span dependency="DGRE+STUY" style="display:none">: </span>
+            <span class="programline" id="FIELD_STUY"></span>
+          </span>
+          <span class="paddedline" dependency="SCIT|SCHO|SSTA|SCNT">
+            <span class="companyname companyname_educ" dependency="SCHO" id="FIELD_SCHO"></span>
+            <span class="statesWrapper" dependency="SCHO+SCIT|SSTA" style="display:none"> - </span>
+            <span class="joblocation jobcity" id="FIELD_SCIT"></span><span dependency="SCIT+SSTA" style="display:none">, </span>
+            <span class="joblocation jobstate" id="FIELD_SSTA"></span><span dependency="SSTA+SCNT" style="display:none">, </span>
+            <span class="joblocation jobstate" id="FIELD_SCNT"></span>
+          </span>
+          
+          <span class="paddedline">
+            <span class="field" id="685d0288-d6f7-4d1a-a6e6-4ec425f90005FRFM1"><font color="#40B0DE">Enter any colleges, universities or training programs that you have attended.<br><u>See Examples</u></font></span>
+          </span>
+        </div>
+      </div></div><div xmlns="http://www.w3.org/1999/xhtml" id="SECTION_AFIL4153efb4-6b86-427f-8f35-1612dcf6583d" class="section" style="padding-top:0px;">
+      <div class="heading">
+        <div class="sectiontitle" id="SECTNAME_AFIL4153efb4-6b86-427f-8f35-1612dcf6583d">Activities and Honors</div>
+      </div>
+      
+    <div class="paragraph firstparagraph" id="PARAGRAPH_4153efb4-6b86-427f-8f35-1612dcf6583d_1">
+        <div class="field singlecolumn" id="4153efb4-6b86-427f-8f35-1612dcf6583dFRFM1"><font color="#40B0DE">Enter any professional organizations that you are involved in.<br><u>See Examples</u></font></div>
+      </div></div></div>
+</body></html>
